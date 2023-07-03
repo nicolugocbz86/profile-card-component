@@ -41,25 +41,70 @@
                 background-color: hsl(185, 75%, 39%);
             }
 
+            span {
+                font-weight: 400;
+                color: hsl(227, 10%, 46%);
+            }
+
         /* CLASS */
 
             .card,
             .card-bottom,
+            .card-bottom-top,
             .card-bottom-bottom {
                 display: flex;
             }
 
             .card,
-            .card-bottom {
+            .card-bottom,
+            .card-bottom-top {
                 flex-direction: column;
             }
 
             .card-bottom {
-                background-color: white;
+                background-color: hsl(0, 0%, 100%);
+            }
+
+            .card-bottom img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 23.2rem;
+                margin: auto;
+                border: .2rem solid hsl(0, 0%, 100%);
+                border-radius: 100%;
+            }
+
+            .card-bottom-top {
+                padding: 3rem 1.8rem 1.8rem 1.8rem;
+                gap: .6rem;
+            }
+
+            .card-bottom-top h1 {
+                font-size: 18px;
+            }
+
+            .card-bottom-top p {
+                color: hsl(227, 10%, 46%);
+            }
+
+            .card-bottom-bottom {
+                border-top: .1rem solid hsl(0, 0%, 59%);
+                padding: 2rem;
             }
 
             .card-bottom-bottom div {
                 width: 40%;
+            }
+
+            .card-bottom-bottom div p:first-child {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .card-bottom-bottom div p:last-child {
+                color: hsl(227, 10%, 46%);
             }
 
         /* ID */
