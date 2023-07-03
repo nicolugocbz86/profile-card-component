@@ -20,7 +20,7 @@
     }
     .attribution a {
         text-decoration: none;
-        color: hsl(228, 45%, 44%);
+        color: hsl(0, 0%, 100%);
     }
 
 /* MEDIA QUERIES */
@@ -51,17 +51,24 @@
             .card,
             .card-bottom,
             .card-bottom-top,
-            .card-bottom-bottom {
+            .card-bottom-bottom,
+            .card-bottom-bottom div {
                 display: flex;
             }
 
             .card,
             .card-bottom,
-            .card-bottom-top {
+            .card-bottom-top,
+            .card-bottom-bottom div {
                 flex-direction: column;
             }
 
+            .card img {
+                border-radius: 1rem 1rem 0 0;
+            }
+
             .card-bottom {
+                border-radius: 0 0 1rem 1rem;
                 background-color: hsl(0, 0%, 100%);
             }
 
@@ -70,14 +77,14 @@
                 left: 0;
                 right: 0;
                 top: 0;
-                bottom: 23.2rem;
+                bottom: 22.8rem;
                 margin: auto;
-                border: .2rem solid hsl(0, 0%, 100%);
+                border: .3rem solid hsl(0, 0%, 100%);
                 border-radius: 100%;
             }
 
             .card-bottom-top {
-                padding: 3rem 1.8rem 1.8rem 1.8rem;
+                padding: 3.8rem 1.8rem 1.4rem 1.8rem;
                 gap: .6rem;
             }
 
@@ -96,6 +103,7 @@
 
             .card-bottom-bottom div {
                 width: 40%;
+                gap: .2rem;
             }
 
             .card-bottom-bottom div p:first-child {
@@ -104,6 +112,8 @@
             }
 
             .card-bottom-bottom div p:last-child {
+                letter-spacing: .1rem;
+                font-size: .6rem;
                 color: hsl(227, 10%, 46%);
             }
 
