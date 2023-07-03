@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+.color {background-color: hsl(185, 75%, 39%);}
+.color {background-color: hsl(229, 23%, 23%);}
+.color {background-color: hsl(227, 10%, 46%);}
+.color {background-color: hsl(0, 0%, 59%);}
+
 /* UNIVERSAL */
 
     * {
@@ -23,7 +28,40 @@
     @media screen and (min-width: 0px) {
 
         /* TAGS */
+
+            body {
+                margin: auto;
+                width: 375px;
+                height: 667px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                gap: 1rem;
+                background-color: hsl(185, 75%, 39%);
+            }
+
         /* CLASS */
+
+            .card,
+            .card-bottom,
+            .card-bottom-bottom {
+                display: flex;
+            }
+
+            .card,
+            .card-bottom {
+                flex-direction: column;
+            }
+
+            .card-bottom {
+                background-color: white;
+            }
+
+            .card-bottom-bottom div {
+                width: 40%;
+            }
+
         /* ID */
 
     }
